@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 .container-fe {
     width: 90%;
     margin: auto;
@@ -145,9 +156,12 @@ ul.icons li {
     grid-template-rows: 1fr;
     gap: 1px 1px;
     grid-template-areas: ". .";
-    margin-top: 2.3rem;
-  }
+    margin-top: 2rem;
+}
 
+.sm-edit {
+    margin-top: 1.1rem;
+}
 .amount h2 {
     font-family: 'Poppins';
     font-style: normal;
@@ -155,7 +169,7 @@ ul.icons li {
     font-size: 18px;
     line-height: 36px;
     color: #8F503F;
-    padding-top: 24px;
+    padding-top: 18px;
 }
 
 .amount span {
@@ -206,6 +220,112 @@ ul.icons li {
 }
 
 /* RESPONSIVENESS */
+/* @media only screen and (min-width: 320px) {
+    .img-holder img {
+        width: 286px !important;
+        height: 226px !important;
+    }
+} */
+
+
+
+@media only screen and (max-width: 1440px) {
+    .img-holder img {
+        width: 673px;
+    }
+  }
+
+
+@media only screen and (max-width: 1280px) {
+    
+    .img-holder img {
+        width: 695px !important;
+        height: 425px;
+    }
+
+    .room-imgs {
+        width: 60%;
+    }
+
+    .room-contents {
+        width: 40%;
+    }
+  }
+
+  
+  @media  only screen and (max-width: 768px) {
+
+    .room-contentInner {
+        padding-left: 0;
+    }
+
+    .sm-img>.img-holder {
+        margin-left: 30px;
+    }
+
+    .cont-holder p {
+        font-size: 12px;
+        line-height: 22px;
+        padding: 8px 0;
+        width: 100%;
+    }
+
+    .grid-container {
+        margin-top: 1rem;
+    }
+
+    .book-room button {
+        height: 40px !important;
+        width: 80% !important;
+        font-size: 14px !important;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 140px 145px;
+        grid-template-rows: 1fr;
+        gap: 1px 1px;
+        grid-template-areas: ". .";
+        margin-top: 1rem;
+    }
+
+    .sm-edit {
+        margin-top: 0.2rem;
+    }
+    
+    .room-imgs {
+        width: 55%;
+    }
+
+    .room-contents {
+        width: 45%;
+    }
+
+    .img-holder img {
+        width: 358px !important;
+        height: 314px !important;
+    }
+
+    .amount h2 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 36px;
+        color: #8F503F;
+        padding-top: 4px;
+    }
+
+    .sm-img img {
+        padding-left: 2px;
+    }
+
+    .sm-screen {
+        padding-right: 0px;
+    }
+}
+
+
 @media screen and (min-width: 320px) and (max-width: 760px){
     
     .container-fe {
@@ -252,14 +372,14 @@ ul.icons li {
     }
 
     .sm-screen {
-        margin-top: 62%;
+        margin-top: 65%;
     }
 
     .sm-img img {
-        width: 91% !important;
+        width: 337px !important;
         position: absolute;
-        top: 54em;
-        left: 2px;
+        top: 52em;
+        left: 4px;
         padding: 15px;
     }
 
@@ -277,27 +397,103 @@ ul.icons li {
         width: 84%;
         font-size: 16px;
     }
-  }
+}
 
-  @media (min-width: 1280px) {
-    .img-holder img {
-        width: 695px;
-        height: 425px;
+@media screen and (max-width: 425px) {
+    .sm-img img {
+        width: 383px !important;
+        position: absolute;
+        top: 52em;
+        left: 4px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .cont-holder p {
+        font-size: 14px;
+        padding: 15px 0;
+        width: 94%;
+        margin: auto auto auto 0;
+    } 
+    .sm-img img {
+        width: 324px !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .sm-img img {
+        width: 288px !important;
+        position: absolute;
+        top: 49em;
+        left: 4px;
+        padding: 15px;
     }
 
-    .room-imgs {
-        width: 60%;
+    .cont-holder p {
+        font-size: 14px;
+        padding: 15px 0;
+        width: 85%;
     }
 
-    .room-contents {
-        width: 40%;
+    .grid-container {
+        grid-template-columns: 140px 150px;
     }
-  }
 
-  @media (min-width: 1440px) {
-    .img-holder img {
-        width: 673px;
+    .cont-holder p {
+        width: 100%;
     }
-  }
 
+    .amount h2 {
+        font-size: 12px;
+        padding-top: 9px;
+    }
+
+    .cont-holder p {
+        font-size: 12px;
+    }
+
+    .cont-holder h2 {
+        font-size: 20px;
+    }
+
+    .sm-screen {
+        margin-top: 54%;
+    }
+
+    .ratings h3 {
+        font-size: 14px;
+    }
+
+    ul.icons li {
+        width: 35px;
+        height: 35px;
+    }
+    .wifi img {
+        width: 20px;
+        left: -1px;
+    }
+
+    .fork img {
+        width: 14px;
+        left: 0px;
+    }
+
+    .bottle img {
+        width: 15px;
+        left: 0px;
+        top: 7px;
+    }
+    .amount span {
+        font-size: 12px;
+    }
+}
   /* RESPONSIVENESS END */
+
+
+
+
+
+
+
+
