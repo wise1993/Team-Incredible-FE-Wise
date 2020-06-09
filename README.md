@@ -1,1 +1,2 @@
-# Team-Incredible-FE-Wise
+# Team-Incredible-FE-Hotel-Thug
+Hotel Website (Lead - ThugDeveloper)
